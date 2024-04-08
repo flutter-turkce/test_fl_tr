@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Flutter Türkçe">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Flutter Türkçe">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Flutter Türkçe</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "671053210";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <style nonce="">body,html{height:100%;margin:0;padding:0;width:100%}progress-indicator{opacity:1;pointer-events:none;-webkit-transition:opacity cubic-bezier(.4,0,.2,1) 436ms;transition:opacity cubic-bezier(.4,0,.2,1) 436ms;z-index:9999}progress-indicator.hide{opacity:0}progress-indicator .first-indicator,progress-indicator .second-indicator{background-color:#4285f4;bottom:0;left:0;right:0;top:0;position:absolute;-webkit-transform-origin:left center;transform-origin:left center;-webkit-transform:translate3d(0,0,0) scaleX(0);transform:scaleX(0);will-change:transform}progress-indicator .first-indicator{-webkit-animation:first-indicator 2s linear infinite;animation:first-indicator 2s linear infinite}progress-indicator .second-indicator{-webkit-animation:second-indicator 2s linear infinite;animation:second-indicator 2s linear infinite}progress-indicator>.admob-logo-frame{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;-webkit-animation:fadein 436ms;animation:fadein 436ms;height:98%}progress-indicator .admob-logo{-webkit-align-self:center;align-self:center}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes first-indicator{0%{-webkit-transform:translate3d(0,0,0) scaleX(0)}25%{-webkit-transform:translate3d(0,0,0) scaleX(.5)}50%{-webkit-transform:translate3d(25%,0,0) scaleX(.75)}75%{-webkit-transform:translate3d(100%,0,0) scaleX(0)}100%{-webkit-transform:translate3d(100%,0,0) scaleX(0)}}@keyframes first-indicator{0%{transform:translateX(0) scaleX(0)}25%{transform:translateX(0) scaleX(.5)}50%{transform:translateX(25vw) scaleX(.75)}75%{transform:translateX(100vw) scaleX(0)}100%{transform:translateX(100vw) scaleX(0)}}@-webkit-keyframes second-indicator{0%{-webkit-transform:translate3d(0,0,0) scaleX(0)}60%{-webkit-transform:translate3d(0,0,0) scaleX(0)}80%{-webkit-transform:translate3d(0,0,0) scaleX(.6)}100%{-webkit-transform:translate3d(100%,0,0) scaleX(.1)}}@keyframes second-indicator{0%{transform:translateX(0) scaleX(0)}60%{transform:translateX(0) scaleX(0)}80%{transform:translateX(0) scaleX(.6)}100%{transform:translateX(100vw) scaleX(.1)}}</style>
+</head>
+<body>
+  <progress-indicator
+        style="background-color: #f8f9fa; width: 100%; height: 100%; position:fixed;" class="">
+        <div style="background-color: #c6dafc; height: 4px; overflow: hidden; position: relative;">
+            <div class="first-indicator"></div>
+            <div class="second-indicator"></div>
+        </div>
+    </progress-indicator>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+
+    window.addEventListener("flutter-first-frame",function() {
+      document.querySelector('progress-indicator').remove();
+    });
+
+
+
+  </script>
+</body>
+</html>
